@@ -1,0 +1,12 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.run": "onType",
+  "prettier.configPath": ".prettierrc",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "typescript.preferences.quoteStyle": "double",
+  "files.eol": "\n"
+}

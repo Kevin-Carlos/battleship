@@ -1,13 +1,17 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: {url: '/', static: true},
-    src: {url: '/dist'},
+    public: { url: "/", static: true },
+    src: { url: "/dist" },
+  },
+  alias: {
+    common: "./src/common",
+    recoil_store: "./src/recoil_store",
   },
   plugins: [
-    '@snowpack/plugin-react-refresh',
-    '@snowpack/plugin-dotenv',
-    '@snowpack/plugin-typescript',
+    "@snowpack/plugin-react-refresh",
+    "@snowpack/plugin-dotenv",
+    "@snowpack/plugin-typescript",
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
@@ -25,5 +29,6 @@ module.exports = {
   },
   buildOptions: {
     /* ... */
+    baseUrl: "./src",
   },
 };

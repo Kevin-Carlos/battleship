@@ -1,13 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { RecoilRoot } from "recoil";
+import { Battleship } from "./pages/game-board";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RecoilRoot>
+      <Battleship />
+    </RecoilRoot>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById("root")
 );
 
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
